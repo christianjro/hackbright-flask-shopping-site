@@ -28,6 +28,6 @@ def read_customers_from_file(filepath):
 
 def get_by_email(email):
     """Return a customer, given their email."""
-    return customers[email]
+    return customers.get(email)
 
 customers = read_customers_from_file("customers.txt")
